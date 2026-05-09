@@ -1,0 +1,227 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="wLS9IKvgg6GC59ntzBdF" name="第 1 页">
+    <mxGraphModel dx="3580" dy="1886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-155" connectable="0" parent="1" style="group;fillColor=#b0e3e6;strokeColor=#0e8088;" value="" vertex="1">
+          <mxGeometry height="590" width="2110" x="100" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-106" parent="oEJlD1nvycWhGDYUXuHP-155" style="whiteSpace=wrap;strokeWidth=2;fillColor=#b0e3e6;strokeColor=#0e8088;" value="" vertex="1">
+          <mxGeometry height="590" width="2110" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-126" parent="oEJlD1nvycWhGDYUXuHP-155" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="主控核心模块&#xa;STM32主芯片/最小系统电路" vertex="1">
+          <mxGeometry height="106" width="272.47959183673464" x="895.5918367346937" y="85.61538461538461" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-127" parent="oEJlD1nvycWhGDYUXuHP-155" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="多传感器融合感知模块&#xa;摄像头视觉模块/超声波测距传感器/其他" vertex="1">
+          <mxGeometry height="138.6153846153846" width="274.59183673469386" x="1696.1359183673467" y="359.9994871794872" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-128" parent="oEJlD1nvycWhGDYUXuHP-155" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="运动控制模块&#xa;直流减速电机/电机驱动模块/差分轮系" vertex="1">
+          <mxGeometry height="138.6153846153846" width="274.59183673469386" x="1368.7379591836732" y="359.9994871794872" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-129" parent="oEJlD1nvycWhGDYUXuHP-155" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="无线通信模块&#xa;ESP8266/ESP32通信模组" vertex="1">
+          <mxGeometry height="106" width="246.07653061224488" x="1069.8553061224488" y="376.3071794871795" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-130" parent="oEJlD1nvycWhGDYUXuHP-155" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="声光交互模块&#xa;LED状态指示灯/互动扬声器" vertex="1">
+          <mxGeometry height="106" width="269.3112244897959" x="747.7379591836734" y="376.3071794871795" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-131" parent="oEJlD1nvycWhGDYUXuHP-155" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="电源管理模块&#xa;18650锂电池/充放电保护模块/降压模块" vertex="1">
+          <mxGeometry height="138.6153846153846" width="274.59183673469386" x="420.3399999999999" y="359.9994871794872" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-132" parent="oEJlD1nvycWhGDYUXuHP-155" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="机械结构模块&#xa;承载底盘/传感器支架/固润防护外壳" vertex="1">
+          <mxGeometry height="138.6153846153846" width="274.59183673469386" x="92.94204081632653" y="359.9994871794872" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-141" edge="1" parent="oEJlD1nvycWhGDYUXuHP-155" source="oEJlD1nvycWhGDYUXuHP-126" style="startArrow=none;endArrow=block;exitX=0.998;exitY=0.509;entryX=0.5;entryY=0;rounded=0;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=15;" value="数据采集/控制指令下发">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1193" y="140" />
+              <mxPoint x="1836" y="140" />
+            </Array>
+            <mxPoint x="1171.0714285714282" y="156.6353846153845" as="sourcePoint" />
+            <mxPoint x="1836.4318367346937" y="359.99948717948723" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-142" edge="1" parent="oEJlD1nvycWhGDYUXuHP-155" source="oEJlD1nvycWhGDYUXuHP-126" style="startArrow=none;endArrow=block;exitX=1;exitY=0.78;entryX=0.5;entryY=0;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=15;" target="oEJlD1nvycWhGDYUXuHP-128" value="运动控制指令/转速反馈">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-143" edge="1" parent="oEJlD1nvycWhGDYUXuHP-155" source="oEJlD1nvycWhGDYUXuHP-126" style="startArrow=none;endArrow=block;exitX=0.79;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;" target="oEJlD1nvycWhGDYUXuHP-129" value="串口数据交互">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-144" edge="1" parent="oEJlD1nvycWhGDYUXuHP-155" source="oEJlD1nvycWhGDYUXuHP-126" style="startArrow=none;endArrow=block;exitX=0.21;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;" target="oEJlD1nvycWhGDYUXuHP-130" value="状态显示/互动控制">
+          <mxGeometry relative="1" x="-0.0001" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-145" edge="1" parent="oEJlD1nvycWhGDYUXuHP-155" source="oEJlD1nvycWhGDYUXuHP-126" style="startArrow=none;endArrow=block;exitX=0;exitY=0.78;entryX=0.5;entryY=0;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=15;" target="oEJlD1nvycWhGDYUXuHP-131" value="电压检测/功耗管控">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-146" edge="1" parent="oEJlD1nvycWhGDYUXuHP-155" source="oEJlD1nvycWhGDYUXuHP-126" style="startArrow=none;endArrow=block;exitX=0.002;exitY=0.517;entryX=0.5;entryY=0;rounded=0;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=15;" value="硬件承载与结构适配">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="892" y="140" />
+              <mxPoint x="226" y="140" />
+            </Array>
+            <mxPoint x="891.5918367346937" y="155.57538461538434" as="sourcePoint" />
+            <mxPoint x="226.2379591836734" y="359.99948717948723" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-147" edge="1" parent="oEJlD1nvycWhGDYUXuHP-155" source="oEJlD1nvycWhGDYUXuHP-125" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.96;entryY=0;rounded=0;exitDx=0;exitDy=0;strokeWidth=3;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1233.9" y="-40" as="sourcePoint" />
+            <mxPoint x="1168.072244897959" y="119.61538461538453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-156" parent="oEJlD1nvycWhGDYUXuHP-155" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=36;fontStyle=1" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;硬件感知与执行层&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="340" x="10" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-107" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="580" width="460" x="1720" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-108" parent="oEJlD1nvycWhGDYUXuHP-107" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="Wi-Fi/BLE双模无线通信" vertex="1">
+          <mxGeometry height="61.65354330708663" width="311.7014925373134" x="85.13432835820895" y="49.094488188976385" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-109" parent="oEJlD1nvycWhGDYUXuHP-107" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="机器人-手机端双向数据传输链路" vertex="1">
+          <mxGeometry height="89.05511811023624" width="357.01492537313425" x="63.164179104477604" y="167.83464566929138" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-110" parent="oEJlD1nvycWhGDYUXuHP-107" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="断网自动重连/离线缓存机制" vertex="1">
+          <mxGeometry height="89.05511811023624" width="357.01492537313425" x="63.164179104477604" y="313.97637795275597" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-111" parent="oEJlD1nvycWhGDYUXuHP-107" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="TCP/UDP通信协议与数据加密" vertex="1">
+          <mxGeometry height="89.05511811023624" width="357.01492537313425" x="63.164179104477604" y="460.11811023622056" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-157" parent="oEJlD1nvycWhGDYUXuHP-107" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=36;fontStyle=1" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;通信传输层&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="240" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-112" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#cdeb8b;strokeColor=#36393d;" value="" vertex="1">
+          <mxGeometry height="700" width="1130" x="50" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-113" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" value="" vertex="1">
+          <mxGeometry height="576" width="420" x="700" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-114" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" value="" vertex="1">
+          <mxGeometry height="576" width="524" x="97" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-153" edge="1" parent="1" source="oEJlD1nvycWhGDYUXuHP-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;" target="oEJlD1nvycWhGDYUXuHP-121">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="79" />
+              <mxPoint x="1220" y="204" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-115" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" value="上行数据上传/下行指令接收" vertex="1">
+          <mxGeometry height="78" width="220" x="1340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-116" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" value="硬件驱动控制/原始数据采集" vertex="1">
+          <mxGeometry height="120" width="320" x="670" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-117" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="应用层&#xa;报令解析/状态管理/异常处理/全局功" vertex="1">
+          <mxGeometry height="102" width="260" x="207" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-118" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="算法层&#xa;目标识别算法/多传感器融合算法&#xa;自适应跟随算法/动态避障算法" vertex="1">
+          <mxGeometry height="150" width="260" x="207" y="281" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-119" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="底层驱动层&#xa;传感器驱动/电机驱动/通信驱动&#xa;声光驱动/电源管理驱动" vertex="1">
+          <mxGeometry height="126" width="260" x="207" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-121" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="界面交互层&#xa;首页状态监控/远程指令控制/跟随参数&#xa;异常消息提醒/实时视频查看" vertex="1">
+          <mxGeometry height="150" width="260" x="805" y="129" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-122" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="数据处理层&#xa;数据解析/本地存储/指令编码/视频流" vertex="1">
+          <mxGeometry height="102" width="260" x="805" y="353" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-123" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f7ed;strokeColor=#36393d;fontSize=20;" value="通信适配层&#xa;连接管理/双向数据收发/自动重连/加" vertex="1">
+          <mxGeometry height="102" width="260" x="805" y="529" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-124" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" value="下行指令下发/上行数据接收" vertex="1">
+          <mxGeometry height="78" width="260" x="1288" y="631" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-125" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" value="无线数据收发" vertex="1">
+          <mxGeometry height="116" width="190" x="1548" y="784" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-133" edge="1" parent="1" source="oEJlD1nvycWhGDYUXuHP-117" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;" target="oEJlD1nvycWhGDYUXuHP-118" value="算法调用与指令下发">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-134" edge="1" parent="1" source="oEJlD1nvycWhGDYUXuHP-118" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;" target="oEJlD1nvycWhGDYUXuHP-119" value="驱动调用与数据传输">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-135" edge="1" parent="1" source="oEJlD1nvycWhGDYUXuHP-121" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;" target="oEJlD1nvycWhGDYUXuHP-122" value="操作指令下发">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-136" edge="1" parent="1" source="oEJlD1nvycWhGDYUXuHP-122" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=15;" target="oEJlD1nvycWhGDYUXuHP-123" value="数据封装与传输">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-137" edge="1" parent="1" style="startArrow=none;endArrow=block;exitX=1.001;exitY=0.438;rounded=0;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.005;entryY=0.491;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=15;" value="本地状态同步">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="468" y="560" />
+              <mxPoint x="660" y="560" />
+              <mxPoint x="660" y="203" />
+            </Array>
+            <mxPoint x="472.26" y="560.1880000000001" as="sourcePoint" />
+            <mxPoint x="804.7" y="202.64999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-139" edge="1" parent="1" style="startArrow=none;endArrow=block;exitX=0.13;exitY=1;entryX=0.407;entryY=0.007;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" target="oEJlD1nvycWhGDYUXuHP-116" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240.79999999999995" y="627" as="sourcePoint" />
+            <mxPoint x="820" y="846" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-140" edge="1" parent="1" style="startArrow=none;endArrow=block;exitX=1.043;exitY=0.521;entryX=0.275;entryY=0.024;rounded=0;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" target="oEJlD1nvycWhGDYUXuHP-124" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="577" />
+              <mxPoint x="1360" y="626" />
+              <mxPoint x="1359" y="626" />
+            </Array>
+            <mxPoint x="1065.18" y="577.1419999999998" as="sourcePoint" />
+            <mxPoint x="1489" y="626" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-148" edge="1" parent="1" source="oEJlD1nvycWhGDYUXuHP-116" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.24;rounded=0;strokeWidth=3;" target="oEJlD1nvycWhGDYUXuHP-126" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-149" edge="1" parent="1" style="startArrow=none;endArrow=block;exitX=0.275;exitY=1.036;rounded=0;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;exitPerimeter=0;startSize=6;strokeWidth=3;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="749" />
+              <mxPoint x="1830" y="749" />
+            </Array>
+            <mxPoint x="1359.5" y="710.808" as="sourcePoint" />
+            <mxPoint x="1830" y="627" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-150" edge="1" parent="1" source="oEJlD1nvycWhGDYUXuHP-115" style="startArrow=none;endArrow=block;entryX=-0.011;entryY=0.635;rounded=0;edgeStyle=orthogonalEdgeStyle;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.005;exitY=0.517;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=3;" target="oEJlD1nvycWhGDYUXuHP-157" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1511" y="80" as="sourcePoint" />
+            <mxPoint x="1658" y="80.60000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-151" edge="1" parent="1" source="oEJlD1nvycWhGDYUXuHP-107" style="startArrow=none;endArrow=block;exitX=0.641;exitY=0.999;entryX=0.994;entryY=0.402;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=3;" target="oEJlD1nvycWhGDYUXuHP-125" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1888" y="639" as="sourcePoint" />
+            <mxPoint x="1476" y="1034" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-152" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=28;fontStyle=1" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;软件控制与算法层&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="320" x="70" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-160" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;机器人端软件&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="100" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="oEJlD1nvycWhGDYUXuHP-161" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;手机端APP软件&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="133" x="717" y="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,141 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="r8HyTJKHiQiBA0qsMt4z">
+    <mxGraphModel dx="1703" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-24" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="whXRgmuSIn2UwFaLUmUc-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;机器人上电初始化&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="200" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-25" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-38" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="whXRgmuSIn2UwFaLUmUc-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;多传感器采集数据&lt;/div&gt;&lt;div&gt;摄像头+超声波+红外&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="160" x="280" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-26" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;STM32主控处理数据&lt;/div&gt;&lt;div&gt;多传感器融合+宠物识别&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="280" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-27" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-43" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-10" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;是否识别到宠物？&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="215" x="252.5" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-28" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;执行自主跟随+动态避障算法&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="260" x="230" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-29" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;运动控制模块驱动电机&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap;&quot;&gt;实现跟随移动&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="220" x="250" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-30" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-41" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="whXRgmuSIn2UwFaLUmUc-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="710" />
+              <mxPoint x="210" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-14" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="&lt;div&gt;是否出现异常？&lt;/div&gt;&lt;div&gt;低电量/目标丢失/障碍物危险&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="215" x="252.5" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-31" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;机器人本地声光报警&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="275" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-32" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;APP推送异常提醒&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-51" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="whXRgmuSIn2UwFaLUmUc-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="1030" />
+              <mxPoint x="40" y="163" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;异常处理/自动返航/停止运行&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="245" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-34" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;无线通信模块上传数据&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap;&quot;&gt;视频/状态/环境信息&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="520" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-35" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;手机端APP接收并显示&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap;&quot;&gt;实时监控/状态展示&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="520" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-36" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="whXRgmuSIn2UwFaLUmUc-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;用户APP下发指令&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap;&quot;&gt;逗宠/参数设置/模式切换&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="520" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-37" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="whXRgmuSIn2UwFaLUmUc-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="960" />
+              <mxPoint x="830" y="620" />
+            </Array>
+            <mxPoint x="860" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;机器人解析指令并执行&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap;&quot;&gt;声光互动/参数调整&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; font-size: 14px; text-align: start; white-space: nowrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="520" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-50" edge="1" parent="1" source="whXRgmuSIn2UwFaLUmUc-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="whXRgmuSIn2UwFaLUmUc-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="188" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="启动扫描搜索模式&lt;div&gt;声光提示&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="是" vertex="1">
+          <mxGeometry height="30" width="60" x="345" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="是" vertex="1">
+          <mxGeometry height="30" width="60" x="345" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="否" vertex="1">
+          <mxGeometry height="30" width="60" x="202" y="683" as="geometry" />
+        </mxCell>
+        <mxCell id="whXRgmuSIn2UwFaLUmUc-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="否" vertex="1">
+          <mxGeometry height="30" width="60" x="184.5" y="354" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

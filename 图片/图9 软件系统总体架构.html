@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>机器人系统架构图</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:sans-serif;background:#fff;padding:16px;}
+.wrap{font-family:sans-serif;padding:12px 8px;}
+.layer{border-radius:12px;border:1px solid;padding:12px 14px;margin-bottom:8px;}
+.layer-title{font-size:12px;font-weight:500;margin-bottom:10px;text-align:center;letter-spacing:.5px;}
+.nodes{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;}
+.node{border-radius:6px;border:1px solid;padding:7px 10px;text-align:center;flex:1;min-width:100px;}
+.node .nt{font-size:12px;font-weight:500;}
+.node .ns{font-size:10px;margin-top:3px;opacity:.75;}
+.sublayers{display:flex;gap:8px;}
+.sublayer{flex:1;border-radius:8px;border:1px dashed;padding:8px 10px;}
+.sublayer-title{font-size:11px;font-weight:500;text-align:center;margin-bottom:7px;}
+.arrow{text-align:center;font-size:11px;color:#666;margin:2px 0;display:flex;align-items:center;justify-content:center;gap:6px;}
+.arrow::before,.arrow::after{content:'';flex:1;height:1px;background:#ccc;}
+
+/* 硬件层 - blue */
+.hw{background:#E6F1FB;border-color:#378ADD;}
+.hw .layer-title{color:#042C53;}
+.hw-n{background:#E6F1FB;border-color:#85B7EB;}
+.hw-n .nt{color:#042C53;}
+.hw-n .ns{color:#185FA5;}
+
+/* 驱动层 - teal */
+.dr{background:#E1F5EE;border-color:#1D9E75;}
+.dr .layer-title{color:#04342C;}
+.dr-n{background:#E1F5EE;border-color:#5DCAA5;}
+.dr-n .nt{color:#04342C;}
+
+/* 算法层 - amber */
+.al{background:#FAEEDA;border-color:#BA7517;}
+.al .layer-title{color:#412402;}
+.al-n{background:#FAEEDA;border-color:#EF9F27;}
+.al-n .nt{color:#412402;}
+
+/* 业务层 - purple */
+.ap{background:#EEEDFE;border-color:#7F77DD;}
+.ap .layer-title{color:#26215C;}
+.ap-n{background:#EEEDFE;border-color:#AFA9EC;}
+.ap-n .nt{color:#26215C;}
+
+/* 通信层 - teal深 */
+.wc{background:#E1F5EE;border-color:#085041;}
+.wc .layer-title{color:#04342C;}
+.wc-n{background:#E1F5EE;border-color:#1D9E75;}
+.wc-n .nt{color:#04342C;}
+.wc-n .ns{color:#0F6E56;}
+
+/* APP通信 */
+.ac-sl{background:#E1F5EE;border-color:#5DCAA5;}
+.ac-sl .sublayer-title{color:#04342C;}
+.ac-n{background:#E1F5EE;border-color:#5DCAA5;}
+.ac-n .nt{color:#04342C;}
+
+/* 数据处理 - coral */
+.dp{background:#FAECE7;border-color:#D85A30;}
+.dp .sublayer-title{color:#4A1B0C;}
+.dp-n{background:#FAECE7;border-color:#F0997B;}
+.dp-n .nt{color:#4A1B0C;}
+
+/* 界面层 - pink */
+.ui{background:#FBEAF0;border-color:#D4537E;}
+.ui .sublayer-title{color:#4B1528;}
+.ui-n{background:#FBEAF0;border-color:#ED93B1;}
+.ui-n .nt{color:#4B1528;}
+
+.mid-arrow{display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:12px;color:#666;min-width:28px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 1. 机器人本体硬件层 -->
+  <div class="layer hw">
+    <div class="layer-title">① 机器人本体硬件层</div>
+    <div class="nodes">
+      <div class="node hw-n"><div class="nt">主控核心模块</div><div class="ns">STM32F103/F407</div></div>
+      <div class="node hw-n"><div class="nt">多传感器感知模块</div><div class="ns">摄像头/超声波/红外</div></div>
+      <div class="node hw-n"><div class="nt">运动控制模块</div><div class="ns">减速电机/驱动</div></div>
+      <div class="node hw-n"><div class="nt">无线通信模块</div><div class="ns">ESP8266/ESP32</div></div>
+      <div class="node hw-n"><div class="nt">声光交互模块</div><div class="ns">LED/扬声器</div></div>
+      <div class="node hw-n"><div class="nt">电源管理模块</div><div class="ns">锂电池/充放电</div></div>
+    </div>
+  </div>
+
+  <div class="arrow">采集数据 / PWM控制 / 串口收发 / 声光控制 / 电源监测（双向）</div>
+
+  <!-- 2. 机器人端软件系统 -->
+  <div class="layer" style="background:#fafaf7;border:1px solid #ccc;">
+    <div class="layer-title" style="color:#333;">② 机器人端软件系统</div>
+    <div class="sublayers">
+      <div class="sublayer dr">
+        <div class="sublayer-title">底层驱动层</div>
+        <div class="nodes" style="flex-direction:column;gap:5px;">
+          <div class="node dr-n" style="min-width:0;"><div class="nt">传感器驱动</div></div>
+          <div class="node dr-n" style="min-width:0;"><div class="nt">电机驱动</div></div>
+          <div class="node dr-n" style="min-width:0;"><div class="nt">无线通信驱动</div></div>
+          <div class="node dr-n" style="min-width:0;"><div class="nt">声光交互驱动</div></div>
+          <div class="node dr-n" style="min-width:0;"><div class="nt">电源管理驱动</div></div>
+        </div>
+      </div>
+      <div class="mid-arrow"><span>⇄</span><span style="font-size:9px;writing-mode:vertical-rl;">标准化数据</span></div>
+      <div class="sublayer al">
+        <div class="sublayer-title">核心算法层</div>
+        <div class="nodes" style="flex-direction:column;gap:5px;">
+          <div class="node al-n" style="min-width:0;"><div class="nt">目标识别算法</div></div>
+          <div class="node al-n" style="min-width:0;"><div class="nt">多传感器融合</div></div>
+          <div class="node al-n" style="min-width:0;"><div class="nt">自适应跟随算法</div></div>
+          <div class="node al-n" style="min-width:0;"><div class="nt">动态避障算法</div></div>
+        </div>
+      </div>
+      <div class="mid-arrow"><span>⇄</span><span style="font-size:9px;writing-mode:vertical-rl;">决策结果</span></div>
+      <div class="sublayer ap">
+        <div class="sublayer-title">业务应用层</div>
+        <div class="nodes" style="flex-direction:column;gap:5px;">
+          <div class="node ap-n" style="min-width:0;"><div class="nt">指令解析与执行</div></div>
+          <div class="node ap-n" style="min-width:0;"><div class="nt">状态管理与上传</div></div>
+          <div class="node ap-n" style="min-width:0;"><div class="nt">核心功能全局调度</div></div>
+          <div class="node ap-n" style="min-width:0;"><div class="nt">异常检测与应急</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow">上行：状态/视频/传感器数据 &nbsp;|&nbsp; 下行：控制指令/参数配置</div>
+
+  <!-- 3. 无线通信传输层 -->
+  <div class="layer wc">
+    <div class="layer-title">③ 无线通信传输层</div>
+    <div class="nodes">
+      <div class="node wc-n">
+        <div class="nt">上行链路</div>
+        <div class="ns">机器人 → 手机APP<br/>状态/视频/传感器数据</div>
+      </div>
+      <div class="node wc-n">
+        <div class="nt">下行链路</div>
+        <div class="ns">手机APP → 机器人<br/>控制指令/参数配置</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow">上行数据接收 / 下行指令发送（双向）</div>
+
+  <!-- 4. 手机端APP软件系统 -->
+  <div class="layer" style="background:#fafaf7;border:1px solid #ccc;">
+    <div class="layer-title" style="color:#333;">④ 手机端APP软件系统</div>
+    <div class="sublayers">
+      <div class="sublayer ac-sl">
+        <div class="sublayer-title">APP通信层</div>
+        <div class="nodes" style="flex-direction:column;gap:5px;">
+          <div class="node ac-n" style="min-width:0;"><div class="nt">通信连接管理</div></div>
+          <div class="node ac-n" style="min-width:0;"><div class="nt">双向数据收发</div></div>
+          <div class="node ac-n" style="min-width:0;"><div class="nt">自动重连机制</div></div>
+          <div class="node ac-n" style="min-width:0;"><div class="nt">数据加密传输</div></div>
+        </div>
+      </div>
+      <div class="mid-arrow"><span>⇄</span></div>
+      <div class="sublayer dp">
+        <div class="sublayer-title">数据处理层</div>
+        <div class="nodes" style="flex-direction:column;gap:5px;">
+          <div class="node dp-n" style="min-width:0;"><div class="nt">数据解析与格式化</div></div>
+          <div class="node dp-n" style="min-width:0;"><div class="nt">视频流处理与缓存</div></div>
+          <div class="node dp-n" style="min-width:0;"><div class="nt">控制指令编码</div></div>
+          <div class="node dp-n" style="min-width:0;"><div class="nt">数据本地存储</div></div>
+        </div>
+      </div>
+      <div class="mid-arrow"><span>⇄</span></div>
+      <div class="sublayer ui">
+        <div class="sublayer-title">界面交互层</div>
+        <div class="nodes" style="flex-direction:column;gap:5px;">
+          <div class="node ui-n" style="min-width:0;"><div class="nt">首页状态展示</div></div>
+          <div class="node ui-n" style="min-width:0;"><div class="nt">视频监控界面</div></div>
+          <div class="node ui-n" style="min-width:0;"><div class="nt">指令控制界面</div></div>
+          <div class="node ui-n" style="min-width:0;"><div class="nt">参数设置界面</div></div>
+          <div class="node ui-n" style="min-width:0;"><div class="nt">异常提醒界面</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
