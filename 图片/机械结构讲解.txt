@@ -1,0 +1,28 @@
+1. 头部交互模块 (Head Interaction Module)
+此模块是机器人的“脸”和“眼”，负责机器人的视觉采集、表达和用户交互。它是一个独立的子系统。
+此特写图展示了从整体中分离出的头部交互模块。
+头部外壳 (Dome-shaped Head Shell)：采用圆润设计（ABS材质），用于保护内部电子元件并作为外观件。它带有预留摄像头安装孔。
+视觉系统：其核心是小型可调节摄像头支架和摄像头模块，它位于头部最上方，用于收集视频和图像信息。支架可调节以适应不同的观察角度。
+表达和交互系统：下方是LED表情和光环显示模块。它是机器人的核心交互界面，可以显示各种生动的表情和状态光环。
+
+2. 核心机体和电源模块 (Core Body & Power Module)
+此模块是机器人的核心机体，是“大脑”和“能量中枢”所在。它连接着头部和底盘。
+讲解：
+此特写图展示了核心机体和电源模块。
+身体外壳 (Body Shell)：采用圆柱形设计（ABS材质），它是一个承上启下的结构。外壳表面带有扬声器出声孔和LED指示灯窗口，用于音频输出和状态指示。外壳下方带有散热孔。
+核心电子系统：其内部的核心是核心控制和驱动PCB堆叠 (PCB Stack for Core Control and Drive)，它是机器人的主控电脑。它上方堆叠着核心控制PCB和电机驱动。
+电源系统：PCB堆叠上方是轻质锂电池组 (Lightweight Lithium Battery Pack)，为整个系统提供动力。
+连接方式：外壳采用外壳卡扣式连接 (Shell Snap-fit Connection)（便于拆卸），方便维护内部元件。
+
+3. 运动和底盘模块 (Movement & Chassis Module)
+此模块是机器人的基础，负责移动、环境感知和稳固的结构支撑。
+此特写图展示了运动和底盘模块。
+底盘底座板 (Chassis Base Plate)：是整个机器人的基础（ABS材质），其上预留了模块安装孔，用于固定各种组件。
+动力系统 (Drivetrain)：采用差分驱动设计。它包含两组差分驱动电机 (Differential Drive Motors)、对应的轮联轴器 (Wheel Couplings)、和橡胶动力轮 (Rubber Drive Wheels)。底盘前方配有万向轮 (Caster Wheel)，以实现灵活的移动和转向。
+传感器系统 (Sensor System)：它是机器人的感知触角。包含一个环形支架 (Ring Bracket)，用于固定360°超声波传感器阵列 (Ultrasonic Sensor Array)，用于避障。前方和侧面配有红外传感器 (Front/Side Infrared Sensors)，用于近距离感知。底盘还预留了布线槽 (Wiring Slots)。
+
+4. 食物分配模块 (Food Dispensing Module)
+此特写图展示了食物分配模块。
+功能结构：它包含一个可伸缩食物托盘 (Extendable Food Tray)，用于存放和推出食物。
+驱动机构：托盘通过一个独立的喂食机构马达 (Feeding Mechanism Motor)（伺服电机）进行精确控制。马达通过独立的电机安装座 (卡扣式) (Motor Mount (Snap-fit)) 固定在底盘上。
+扩展性：托盘结构下方预留了功能升级接口 (如喂食监测模块)，方便未来扩展功能（例如，增加食物量监测）。
